@@ -20,8 +20,29 @@ export class HeroDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getHero();
-    console.log('heroDetail is loading...');
+    console.log('------------->>>>>>>>>  ngOnInit ');
   }
+  // ngOnChanges(): void {
+  //   console.log('------------->>>>>>>>>  ngOnChanges ');
+  // }
+  // ngDoCheck(): void {
+  //   console.log('------------->>>>>>>>>  ngDoCheck ');
+  // }
+  // ngAfterContentInit(): void {
+  //   console.log('------------->>>>>>>>>  ngAfterContentInit ');
+  // }
+  // ngAfterContentChecked(): void {
+  //   console.log('------------->>>>>>>>>  ngAfterContentChecked ');
+  // }
+  // ngAfterViewInit(): void {
+  //   console.log('------------->>>>>>>>>  ngAfterViewInit ');
+  // }
+  // ngAfterViewChecked(): void {
+  //   console.log('------------->>>>>>>>>  ngAfterViewChecked ');
+  // }
+  // ngOnDestroy(): void {
+  //   console.log('------------->>>>>>>>>  ngOnDestroy ');
+  // }
 
   getHero(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
