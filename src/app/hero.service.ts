@@ -8,7 +8,7 @@ import { MessageService } from './message.service';
   providedIn: 'root',
 })
 export class HeroService {
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService) { }
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
